@@ -97,7 +97,11 @@ export default function Contact() {
           <button
             type="submit"
             disabled={state.submitting}
-            className="w-full py-4 bg-gold text-charcoal font-semibold rounded-lg hover:bg-gold-muted transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed"
+            className={`w-full py-4 font-semibold rounded-lg transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed ${
+              state.succeeded
+                ? 'bg-green-500 text-white cursor-default'
+                : 'bg-gold text-charcoal hover:bg-gold-muted'
+            }`}
           >
             {state.submitting
               ? 'Sending...'
@@ -145,3 +149,4 @@ export default function Contact() {
     </section>
   )
 }
+
