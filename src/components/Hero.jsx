@@ -45,7 +45,7 @@ export default function Hero() {
       <div className="flex-1 order-2 lg:order-1 flex flex-col items-center lg:items-start text-center lg:text-left max-w-2xl -mt-1 lg:mt-0">
         <h1
           ref={headlineRef}
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold leading-[1.2] mb-8 md:mb-12"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-extrabold md:font-bold leading-[1.2] mb-8 md:mb-12"
         >
           <span className="block text-offwhite">Uzair</span>
           <span className="block text-gold">Ashfaq</span>
@@ -86,3 +86,4 @@ export default function Hero() {
     </section>
   )
 }
+
